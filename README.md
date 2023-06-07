@@ -17,6 +17,10 @@ $ npm i -g @nestjs/cli
 ```
 $ docker-compose up -d
 ```
+5. Ejecutar el sistema en modo desarrollo
+```
+$ yarn start:dev
+```
 
 
 ## Stack utilizado

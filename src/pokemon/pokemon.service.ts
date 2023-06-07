@@ -14,6 +14,9 @@ export class PokemonService {
     private readonly pokemonModel: Model<Pokemon>
   ) {}
 
+
+
+
   async create(createPokemonDto: CreatePokemonDto) {
     createPokemonDto.name = createPokemonDto.name.toLocaleLowerCase();
     try {
@@ -25,9 +28,16 @@ export class PokemonService {
     }
   }
 
+
+
+
   findAll() {
     return `This action returns all pokemon`;
   }
+
+
+
+
 
   async findOne(itemToSearch: string) {
     let pokemon: Pokemon;
@@ -48,6 +58,9 @@ export class PokemonService {
     return pokemon;
   }
 
+
+
+
   async update(itemToUpdate: string, updatePokemonDto: UpdatePokemonDto) {
     const pokemon = await this.findOne(itemToUpdate);
     if (updatePokemonDto.name) {
@@ -64,6 +77,9 @@ export class PokemonService {
 
   }
 
+
+
+  
   async remove(id: string) {
     //const pokemon = await this.findOne(id);
     //await pokemon.deleteOne();
