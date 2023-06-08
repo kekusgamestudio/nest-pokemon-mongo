@@ -15,8 +15,6 @@ export class PokemonService {
   ) {}
 
 
-
-
   async create(createPokemonDto: CreatePokemonDto) {
     createPokemonDto.name = createPokemonDto.name.toLocaleLowerCase();
     try {
@@ -36,9 +34,6 @@ export class PokemonService {
   }
 
 
-
-
-
   async findOne(itemToSearch: string) {
     let pokemon: Pokemon;
 
@@ -54,10 +49,8 @@ export class PokemonService {
     if (!pokemon) {
       throw new NotFoundException(`Item ${itemToSearch} not found`);
     }
-
     return pokemon;
   }
-
 
 
 
@@ -77,8 +70,6 @@ export class PokemonService {
 
   }
 
-
-
   
   async remove(id: string) {
     //const pokemon = await this.findOne(id);
@@ -91,7 +82,6 @@ export class PokemonService {
     }
     return;
   }
-
 
 
   private handleExceptions(error: any) {
