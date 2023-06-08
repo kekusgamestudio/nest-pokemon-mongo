@@ -21,47 +21,14 @@ $ docker-compose up -d
 ```
 $ yarn start:dev
 ```
+6. Ejecutar el siguiente curl para llenar la db con datos de prueba
+```
+$ curl --location 'localhost:3000/api/v2/seed'
+```
 
 
 ## Stack utilizado
 * MongoDB
 * Nest
 * Docker
-
-
-## OLD -- Description
-
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
-
-## Installation
-
-```bash
-$ npm install
-```
-
-## Running the app
-
-```bash
-# development
-$ npm run start
-
-# watch mode
-$ npm run start:dev
-
-# production mode
-$ npm run start:prod
-```
-
-## Test
-
-```bash
-# unit tests
-$ npm run test
-
-# e2e tests
-$ npm run test:e2e
-
-# test coverage
-$ npm run test:cov
-```
 
