@@ -34,6 +34,9 @@ export class PokemonService {
   }
 
 
+
+
+  
   async findOne(itemToSearch: string) {
     let pokemon: Pokemon;
 
