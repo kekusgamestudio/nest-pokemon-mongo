@@ -17,11 +17,15 @@ $ npm i -g @nestjs/cli
 ```
 $ docker-compose up -d
 ```
-5. Ejecutar el sistema en modo desarrollo
+5. Clonar archivo __.env.template__ y renombrar como __.env__
+
+6. Llenar las variables de entorno definidas en __.env__
+
+7. Ejecutar el sistema en modo desarrollo
 ```
 $ yarn start:dev
 ```
-6. Ejecutar el siguiente curl para llenar la db con datos de prueba
+8. Ejecutar el siguiente curl para llenar la db con datos de prueba
 ```
 $ curl --location 'localhost:3000/api/v2/seed'
 ```
